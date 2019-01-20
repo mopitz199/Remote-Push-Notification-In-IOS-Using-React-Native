@@ -9,6 +9,8 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View, Button} from 'react-native';
 
+import firebase from 'react-native-firebase';
+
 var PushNotification = require('react-native-push-notification');
 
 const instructions = Platform.select({
@@ -35,10 +37,36 @@ export default class App extends Component<Props> {
         <Text style={styles.welcome}>Welcome to React Native!</Text>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text>
+        <Button title="Notify" onPress={this.onPress} />
       </View>
     );
   }
 }
+
+const messaging = firebase.messaging();
+
+messaging.hasPermission()
+  .then((enabled) => {
+      if (enabled) {
+          messaging.getToken()
+              .then(token => { console.log(token) })
+              .catch(error => { /* handle error */ });
+      } else {
+          messaging.requestPermission()
+              .then(() => { /* got permission */ })
+              .catch(error => { /* handle error */ });
+      }
+  })
+  .catch(error => { /* handle error */ });
+
+firebase.notifications().onNotification((notification) => {
+  const { title, body } = notification;
+  PushNotification.localNotification({
+    title: title,
+    message: body, // (required)
+  });
+});
+
 
 PushNotification.configure({
 

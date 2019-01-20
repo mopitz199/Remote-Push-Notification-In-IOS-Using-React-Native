@@ -6,6 +6,10 @@ target 'PushIOS' do
   # use_frameworks!
 
   # Pods for PushIOS
+  pod 'Firebase/Core'
+  pod 'Firebase/Messaging'
+
+
 
   target 'PushIOS-tvOSTests' do
     inherit! :search_paths

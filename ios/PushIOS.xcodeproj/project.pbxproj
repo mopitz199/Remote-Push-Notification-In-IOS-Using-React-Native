@@ -40,7 +40,7 @@
 		7FF4909351AEDA1563B48E90 /* libPods-PushIOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAEE5C19EDFE58CEB1974A4 /* libPods-PushIOSTests.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		9FE9369721F3AC6500E1B7B1 /* libRCTPushNotification.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE9369421F3AC5700E1B7B1 /* libRCTPushNotification.a */; };
-		9FE936CF21F3B8F500E1B7B1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9FE936CE21F3B8F500E1B7B1 /* GoogleService-Info.plist */; };
+		9FE9375C21F3EC3900E1B7B1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9FE9375B21F3EC3900E1B7B1 /* GoogleService-Info.plist */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		E45D027A691501518517CCA1 /* libPods-PushIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB4A8EC6F73212D426B30D36 /* libPods-PushIOS.a */; };
 		ED0B32FEBA413F8E5001399F /* libPods-PushIOS-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C904FA2B0D474039794B895E /* libPods-PushIOS-tvOSTests.a */; };
@@ -377,7 +377,7 @@
 		9694EF8316D313458072A32F /* Pods-PushIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-PushIOS/Pods-PushIOS.release.xcconfig"; sourceTree = "<group>"; };
 		9FE9368421F3AABC00E1B7B1 /* PushIOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = PushIOS.entitlements; path = PushIOS/PushIOS.entitlements; sourceTree = "<group>"; };
 		9FE9368E21F3AC5700E1B7B1 /* RCTPushNotification.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTPushNotification.xcodeproj; path = "../node_modules/react-native/Libraries/PushNotificationIOS/RCTPushNotification.xcodeproj"; sourceTree = "<group>"; };
-		9FE936CE21F3B8F500E1B7B1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9FE9375B21F3EC3900E1B7B1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AA45D0ED06B38ED1D920FD0B /* Pods-PushIOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushIOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PushIOSTests/Pods-PushIOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		BA996035C3FE6307B0CED325 /* Pods-PushIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PushIOS/Pods-PushIOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -532,7 +532,7 @@
 		13B07FAE1A68108700A75B9A /* PushIOS */ = {
 			isa = PBXGroup;
 			children = (
-				9FE936CE21F3B8F500E1B7B1 /* GoogleService-Info.plist */,
+				9FE9375B21F3EC3900E1B7B1 /* GoogleService-Info.plist */,
 				9FE9368421F3AABC00E1B7B1 /* PushIOS.entitlements */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -1196,7 +1196,7 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				9FE936CF21F3B8F500E1B7B1 /* GoogleService-Info.plist in Resources */,
+				9FE9375C21F3EC3900E1B7B1 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
